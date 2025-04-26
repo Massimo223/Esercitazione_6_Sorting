@@ -30,3 +30,13 @@
 *.exe
 *.out
 *.app
+
+# Folder
+*Debug*
+*Release*
+
+# Configuration
+*.user
+
+# MAC
+*.DS_Store
