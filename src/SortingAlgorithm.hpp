@@ -42,15 +42,15 @@ template<typename T>
 void HeapSort(vector<T>& v) {
     int n = v.size();
 
-    // Costruisci il Max-Heap
+    
     for (int i = n / 2 - 1; i >= 0; i--) {
         heapify(v, n, i);
     }
 
-    // Estrai elementi uno a uno dal Max-Heap
+    
     for (int i = n - 1; i > 0; i--) {
-        swap(v[0], v[i]);      // Porta il massimo alla fine
-        heapify(v, i, 0);      // Ricostruisci heap per la parte rimanente
+        swap(v[0], v[i]);      
+        heapify(v, i, 0);      
     }
 }
 
