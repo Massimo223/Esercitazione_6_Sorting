@@ -25,7 +25,7 @@ int main(int argc, char* argv[]) {
 
     
     auto start = high_resolution_clock::now();
-    BubbleSort(vec);  /t
+    BubbleSort(vec);  
     auto end = high_resolution_clock::now();
     auto duration = duration_cast<milliseconds>(end - start);
     cout << "BubbleSort ha impiegato " << duration.count() << " millisecondi" << endl;
